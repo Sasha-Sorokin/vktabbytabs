@@ -19,7 +19,7 @@
 
 Первым делом вам нужно будет установить этот скрипт через предпочтительное расширение (например, [Tampermonkey](https://www.tampermonkey.net/), [Greasemonkey](https://www.greasespot.net/) или [Violentmonkey](https://violentmonkey.github.io/)). Нажатие следующей кнопки откроет окно установки:
 
-[![Кнопка установки](https://img.shields.io/badge/VK%20Tabby%20Tabs-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-brightgreen)](https://github.com/Sasha-Sorokin/vk_tabbytabs/raw/master/vk_tabbytabs.user.js)
+[![Кнопка установки](https://img.shields.io/badge/VK%20Tabby%20Tabs-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-brightgreen)](https://github.com/Sasha-Sorokin/vktabbytabs/raw/master/vk_tabbytabs.user.js)
 
 Перезагрузите страницы ВКонтакте после установки, сверху ленты должны появиться вкладки для всех выбранных стандартных и вручную созданных списков новостей, нажатие на шестерню откроет меню настройки вкладок.
 
@@ -27,7 +27,7 @@
 
 **Предупреждение о бета версии**: несмотря на то, что большинство работы над скриптом завершено, вы всё ещё можете наткнуться на те или иные ошибки.
 
-Если скрипт не работает или работает неправильно, у вас есть вопросы, используйте секцию [Issues на GitHub →](https://github.com/Sasha-Sorokin/vktabbytabs/issues)
+Если скрипт не работает или работает неправильно, у вас есть вопросы, используйте секцию [Issues на GitHub →](https://github.com/Sasha-Sorokin/vk_tabbytabs/issues)
 
 ### Известные проблемы:
 
