@@ -18,7 +18,7 @@
 
 First you need to install this script using preferred userscript manager extension (like [Tampermonkey](https://www.tampermonkey.net/), [Greasemonkey](https://www.greasespot.net/), [Violentmonkey](https://violentmonkey.github.io/)). Pressing the following button will open an installation window.
 
-[![Installation button](https://img.shields.io/badge/VK%20Tabby%20Tabs-Install-brightgreen)](https://github.com/Sasha-Sorokin/vk_tabbytabs/raw/master/vk_tabbytabs.user.js)
+[![Installation button](https://img.shields.io/badge/VK%20Tabby%20Tabs-Install-brightgreen)](https://github.com/Sasha-Sorokin/vktabbytabs/raw/master/vk_tabbytabs.user.js)
 
 Reload VK pages after installation, at the top of feed tabs must show up for all selected either default or manually created tabs. Pressing the gear icon will open tabs settings menu.
 
