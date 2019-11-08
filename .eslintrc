@@ -1,0 +1,85 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "script",
+        "ecmaFeatures": {
+            "jsx": false
+        }
+    },
+    "env": {
+        "greasemonkey": true,
+        "es6": true,
+        "browser": true
+    },
+    "rules": {
+        // I believe function definition must be wrapped and only then
+        // executed, function (){}() is not clear at all when with
+        // (function () {})() you clearly see where function wrapped
+        // and only then its execution
+        "wrap-iife": [
+            2,
+            "inside"
+        ],
+        // We live in 2019 and not using tabs is bad idea when most
+        // editors already support them. Tabs allow us to use as
+        // much space as we want, when spaces are strict enough and
+        // may lead to problems with readability (for me at least,
+        // I love larger spaces to clearly see blocks)
+        "indent": [
+            2,
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "no-tabs": "off",
+        // I strongly prefer double quotes, there are the reasons
+        "quotes": [
+            2,
+            "double"
+        ],
+        // We have to use console to log a few things and odds
+        "no-console": "off",
+        // no-lone-blocks "incorrectly" selects switch blocks and
+        // does not allow to disable this behavior, which is, I think,
+        // leaves us to use unclear python-like tabulation in JS
+        "no-lone-blocks": "off",
+        // I think sometimes you clearly want to adapt param for further
+        // function execution
+        "no-param-reassign": "off",
+        // Cannot agree on restriction for "ForOfStatement", for-of are far more readable
+        // and nice to use in the code, so it needs an override.
+        // See: https://github.com/airbnb/javascript/blob/64b965efe0355c8290996ff5a675cd8fb30bf843/packages/eslint-config-airbnb-base/rules/style.js#L334
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "ForInStatement",
+                "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+            },
+            {
+                "selector": "LabeledStatement",
+                "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+            },
+            {
+                "selector": "WithStatement",
+                "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+            }
+        ],
+        // I'm not even sure why this one is enabled in the first place
+        "no-continue": "off",
+        "no-undef": "error",
+        "no-inner-declarations": "off"
+    },
+    "extends": [
+        "eslint-config-airbnb-base",
+        "plugin:jsdoc/recommended"
+    ],
+    "plugins": [
+        "jsdoc"
+    ],
+    "settings": {
+        "jsdoc": {
+            "mode": "closure"
+        }
+    }
+}
